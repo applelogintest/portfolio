@@ -1,0 +1,58 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media(min-width:800px){
+    header > nav > .navbar{
+        background-color: dimgray;
+    }
+}
+
+section{
+    border: 2px solid blue;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    
+}
+header > nav {
+    position: absolute;
+    width: 100%;
+}
+header > nav > .navbar{
+    border-bottom: 3px solid #04c2c9;
+    background-color: #1b242f;
+    padding: 20px;   
+   
+}
+
+header > nav > .navbar > .nav_menu{
+    /* border: 1px solid blue; */
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+    display: inline;
+    cursor: pointer;
+}
+
+#home > .flex{
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    height: 100vh;
+}
+
+#home .text{
+    color: white;
+    font-size: 25px;
+}
+
+#home .highlight{
+    color:lightskyblue;
+}
