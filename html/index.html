@@ -9,21 +9,21 @@
     <body>
         <div class="container">
             <header>
-                <nav class="space flex row">
+                <nav>
                     <div class="logo">
-                        <h1>Kim Hak Min</h1>
+                        <h1><a href="#home">Kim Hak Min</a></h1>
                     </div>
-                    <div class="nav_list flex row">
-                        <div class="nav_menu">home</div>
-                        <div class="nav_menu">about</div>
-                        <div class="nav_menu">skills</div>
-                        <div class="nav_menu">project</div>
-                        <div class="nav_menu">contact</div>
+                    <div class="nav_list">
+                        <div class="nav_menu"><a href="#home">home</a></div>
+                        <div class="nav_menu"><a href="#about">about</a></div>
+                        <div class="nav_menu"><a href="#skills">skills</a></div>
+                        <div class="nav_menu"><a href="#project">project</a></div>
+                        <div class="nav_menu"><a href="#contact">contact</a></div>
                     </div>
                 </nav>
             </header>
 
-            <section class="home flex">
+            <section id="home" class="home flex">
                 <article class="flex">
                     <div class="text">
                         <h1>안녕하세요.<br/> Web Developer <br/><span class="highlight">김학민</span>의 포트폴리오 입니다.</h1>
@@ -32,7 +32,7 @@
             </section>
 
             <section class="about flex">
-                <h1 class="heading">ABOT</h1>
+                <h1 id="about"" class="heading">ABOT</h1>
                 <article class="flex row">
                     <div class="title item">
                         <h1>꾸준한 개발자</h1>
@@ -49,42 +49,132 @@
                 </article>
             </section>
 
-            <section class="skill flex">
+            <section id="skills" class="skill flex">
                 <h1 class="heading">SKILLS</h1>
                 <div class="flex skill_wrap">
                     <h1>중급</h1>
                     <div class="flex row">
                         <div class="skill_img">
-                            HTML
+                            <img src="../img/logo/html.png">
                         </div>
                         <div class="skill_img">
-                            HTML
+                            <img src="../img/logo/css.png">
                         </div>
                         <div class="skill_img">
-                            HTML
+                            <img src="../img/logo/java.png">
                         </div>
                         <div class="skill_img">
-                            HTML
+                            <img src="../img/logo/jsp.png">
+                        </div>
+                        <div class="skill_img">
+                            <img src="../img/logo/oracle.png">
                         </div>
                     </div>
                     <h1>초급</h1>
                     <div class="flex row">
-                        
+                        <div class="skill_img">
+                            <img src="../img/logo/javascript.png">
+                        </div>
+                        <div class="skill_img">
+                            <img src="../img/logo/jquery.png">
+                        </div>
+                        <div class="skill_img">
+                            <img src="../img/logo/ajax.png">
+                        </div>
+                        <div class="skill_img">
+                            <img src="../img/logo/react.png">
+                        </div>
+                        <div class="skill_img">
+                            <img src="../img/logo/spring.png">
+                        </div>
+                        <div class="skill_img">
+                            <img src="../img/logo/mybatis.png">
+                        </div>
+                        <div class="skill_img">
+                            <img src="../img/logo/mongodb.png">
+                        </div>
+                        <div class="skill_img">
+                            <img src="../img/logo/github.png">
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="project flex">
-                <h1 class="heading"> PROJECT</h1>
+            <section id="project" class="project flex">
+                <h1 class="heading">PROJECT</h1>
+                <div class="flex row project_wrap">
+                    <div class="thumb" onclick="window.open('https://github.com/SIST-PROJECT-02/SIST_PROJECT_02')" style="background-image: url(../img/project_img/trip_main.png);">
+                    </div>
+                    <div class="flex content">
+                        <div claas="title">
+                            <h1>여행복행~</h1>
+                        </div>
+                        <div class="time">
+                            <p>개발기간 : 20.03.16 ~ 20.04.29</p>
+                        </div>
+                        <div class="skills">
+                            <p>사용기술 : JQuery, Ajax, JSP, Jsoup, Oracle, Mybatis</p>
+                        </div>
+                        <div class="description">
+                            <p>설명 : 여행지 소개 및 숙박,항공 예약기능이 가능한 사이트</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex row project_wrap">
+                    <div class="thumb" onclick="window.open('https://github.com/SIST-PROJECT-03/SIST-PROJECT-03')" style="background-image: url(../img/project_img/movie_main.png);">
+                    </div>
+                    <div class="flex content">
+                        <div claas="title">
+                            <h1>BlockBuster</h1>
+                        </div>
+                        <div class="time">
+                            <p>개발기간 : 20.05.01 ~ 20.06.05 </p>
+                        </div>
+                        <div class="skills">
+                            <p>사용기술 : JQuery, Ajax, JSP, Jsoup, Spring Framework, Mongodb, Mybatis, Tiles</p>
+                        </div>
+                        <div class="description">
+                            <p>설명 : 왓챠, 넷플릭스를 참고하여 만든 영화 추천 사이트</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex row project_wrap">
+                    <div class="thumb" onclick="window.open('https://github.com/kimhm93/redux-book-project')" style="background-image: url(../img/project_img/book_main.png);"></div>
+
+                    <div class="flex content">
+                        <div claas="title">
+                            <h1>SIST 책방</h1>
+                        </div>
+                        <div class="time">
+                            <p>개발기간 : 20.06.16 ~ 20.06.20 </p>
+                        </div>
+                        <div class="skills">
+                            <p>사용기술 : JSoup, React, Redux, NodeJS, Mongodb</p>
+                        </div>
+                        <div class="description">
+                            <p>설명 : 개인프로젝트로 React와 Redux를 연습하기 위해 만든 책 추천 사이트</p>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
-            <section class="contact flex">
+            <section id="contact" class="contact flex">
                 <h1 class="heading">CONTATCT</h1>
+                <div class="flex content">
+                    <h1>Email : kimhm260@gmail.com</h1>
+                    <a href="https://github.com/kimhm93" target="_blank">
+                        <div class="github_addr" style="background-image: url(../img/logo/github.png);"></div>
+                    </a>
+                </div>
             </section>
 
             <footer>
 
             </footer>
+            
         </div>
     </body>
 </html>
