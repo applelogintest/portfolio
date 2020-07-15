@@ -1,12 +1,10 @@
-window.onload = function(){
-    var skill_imgs=document.getElementsByClassName('skill_img');
-    console.log(skill_imgs);
+function clickIcon(){
+    var nav_list=document.getElementById('nav_list');
+    if(nav_list.className === 'nav_list'){
+        nav_list.className += " responsive";
 
-    for(var i=0; i<skill_imgs.length; i++){
-        skill_imgs[i].onmouseover = function(){
-            this.src='../img/img_background.png';
-            console.log(this.src);
-        }
+    }
+    else{
+        nav_list.className = "nav_list";
     }
 }
-
